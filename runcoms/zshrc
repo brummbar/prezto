@@ -13,7 +13,7 @@ fi
 # Customize to your needs...
 
 # Base16 Shell
-# Download scheme from https://github.com/chriskempson/base16-shell .
+# Download scheme from https://github.com/chriskempson/base16-shell.
 BASE16_SCHEME="tomorrow"
 BASE16_SHELL="$HOME/.base16-shell/base16-$BASE16_SCHEME.dark.sh"
 [[ -s $BASE16_SHELL ]] && . $BASE16_SHELL
@@ -24,3 +24,7 @@ if [[ -d "$HOME/.composer/vendor/bin" ]]; then
   export PATH="$HOME/.composer/vendor/bin:$PATH"
 fi
 
+# Add RVM to PATH for scripting
+if [[ -d "$HOME/.rvm/bin" ]]; then
+  export PATH="$PATH:$HOME/.rvm/bin"
+fi
