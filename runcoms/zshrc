@@ -21,8 +21,3 @@ BASE16_SHELL="$HOME/.base16-shell/base16-$BASE16_SCHEME.dark.sh"
 if [[ -d "$HOME/.composer/vendor/bin" ]]; then
   export PATH="$HOME/.composer/vendor/bin:$PATH"
 fi
-
-# Add RVM to PATH for scripting
-if [[ -d "$HOME/.rvm/bin" ]]; then
-  export PATH="$PATH:$HOME/.rvm/bin"
-fi
