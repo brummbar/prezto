@@ -58,7 +58,7 @@ function prompt_brummbar_setup {
 
   # Define prompts.
   PROMPT='
-%F{magenta}%n@%m%f in %F{cyan}%~%f${git_info:+${(e)git_info[prompt]}}
+%F{magenta}%n%f${SSH_TTY:+"%F{red}@%m%f"} in %F{cyan}%~%f${git_info:+${(e)git_info[prompt]}}
 [%D{%T}] %(!. %B%F{red}#%f%b.)${editor_info[keymap]} '
   RPROMPT='${editor_info[overwrite]}%(?:: %F{red}⏎%f)${VIM:+" %B%F{green}V%f%b"}${git_info[rprompt]}'
   SPROMPT='zsh: correct %F{red}%R%f to %F{green}%r%f [nyae]? '
