@@ -19,6 +19,3 @@ alias cdf='cd "$(pfd)"'
 
 # Pushes directory to the current Finder directory.
 alias pushdf='pushd "$(pfd)"'
-
-# Use nicer output for stat command
-alias stat='stat -x'
