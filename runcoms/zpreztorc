@@ -35,6 +35,7 @@ zstyle ':prezto:load' pmodule \
   'completion' \
   'git' \
   'osx' \
+  'composer' \
   'ruby' \
   'history-substring-search' \
   'prompt'

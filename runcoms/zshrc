@@ -15,11 +15,3 @@ fi
 BASE16_SCHEME="tomorrow-night"
 BASE16_SHELL="$HOME/.base16/base16-shell/scripts/base16-$BASE16_SCHEME.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
-
-
-# Add composer folder to path.
-if [[ -d "$HOME/.composer/vendor/bin" ]]; then
-  export PATH="$HOME/.composer/vendor/bin:$PATH"
-elif [[ -d "$HOME/.config/composer/vendor/bin" ]]; then
-  export PATH="$HOME/.config/composer/vendor/bin:$PATH"
-fi
